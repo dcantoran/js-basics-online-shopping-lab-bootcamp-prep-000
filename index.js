@@ -21,15 +21,15 @@ return `${item} has been added to your cart.`;
 
 function viewCart() {
   // write your code here
-  var msg = "";
+  
     if(cart.length === 0) {
-      msg = "Your shopping cart is empty.";
+      console.log("Your shopping cart is empty.");
     }
     if(cart.length === 1) {
       msg = `In your cart, you have ${item} at ${price}`;
     }
   
-  return msg;
+  
 }
 
 function total() {
