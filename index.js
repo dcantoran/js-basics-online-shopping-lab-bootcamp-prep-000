@@ -22,11 +22,10 @@ return `${item} has been added to your cart.`;
 function viewCart() {
   // write your code here
   var msg = "";
-  for (var i = 0; i < cart.length; i ++) {
     if(cart.length === 0) {
       msg = "Your shopping cart is empty.";
     }
-  }
+  
   return msg;
 }
 
