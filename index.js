@@ -16,8 +16,7 @@ var obj = {};
 obj.itemName = item;
 obj.itemPrice = price;
 cart.push(obj);
-console.log(obj.itemName + "has been added to your cart.");
-return cart;
+return `${item} has been added to your cart.`;
 }
 
 function viewCart() {
