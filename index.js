@@ -25,6 +25,9 @@ function viewCart() {
     if(cart.length === 0) {
       msg = "Your shopping cart is empty.";
     }
+    if(cart.length === 1) {
+      msg = `In your cart, you have ${item} at ${price}`;
+    }
   
   return msg;
 }
