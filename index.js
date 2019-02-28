@@ -33,7 +33,7 @@ function viewCart() {
     for(var i = 0; i < cart.length - 1; i++) {
       str = str + `${cart[i].itemName} at $${cart[i].itemPrice}, `
     }
-    return myString + `and ${cart[cart.length - 1].itemName} at $${cart[cart.length - 1].itemPrice}.`
+    return str + `and ${cart[cart.length - 1].itemName} at $${cart[cart.length - 1].itemPrice}.`
   }
 }
 
