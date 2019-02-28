@@ -32,7 +32,7 @@ function viewCart() {
     if(arr.length === 1) {
       str += arr + ".";
     }
-  
+  console.log(str);
 }
 
 function total() {
