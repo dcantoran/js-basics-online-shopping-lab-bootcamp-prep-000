@@ -33,10 +33,8 @@ function viewCart() {
             myString += "."
           }
        }
-
-    }
-
-  if(cart.length === 0){
+    return myString;
+    } else{
     return ("Your shopping cart is empty.")
   }
 }
