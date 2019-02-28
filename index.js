@@ -29,7 +29,7 @@ function viewCart() {
     for(var i = 0; i < cart.length; i ++) {
       arr.push(Object.keys(cart[i])[0] + " at $" + cart[i][Object.keys(cart[i])[0]]);
     }
-    var str = "In your cart you have,";
+    var str = "In your cart, you have";
     
   
 }
