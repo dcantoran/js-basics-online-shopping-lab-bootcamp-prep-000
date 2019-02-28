@@ -32,7 +32,7 @@ function viewCart() {
     if(arr.length === 1) {
       str += arr + ".";
     } else if (arr.length === 2) {
-      str += (arr[0] + " and" + arr[1] )
+      str += (arr[0] + " and" + arr[1] + ".");
     }
   console.log(str);
 }
