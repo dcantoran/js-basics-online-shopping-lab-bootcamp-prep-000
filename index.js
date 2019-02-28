@@ -35,7 +35,7 @@ function viewCart() {
       str += (arr[0] + " and" + arr[1] + ".");
     } else if (arr.length > 2) {
       var last = arr.pop();
-      var comma = arr.join('');
+      var comma = arr.join(', ');
     }
   console.log(str);
 }
