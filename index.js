@@ -29,7 +29,7 @@ function viewCart() {
       var keys = Object.keys(cart[i])[0];
       arr.push(keys + " at $" + cart[i][keys]);
     }
-    var str = "In your cart, you have";
+    var str = "In your cart, you have ";
     if(arr.length === 1) {
       str += arr + ".";
     } else if (arr.length === 2) {
