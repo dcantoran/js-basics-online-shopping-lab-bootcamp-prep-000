@@ -22,6 +22,20 @@ return `${item} has been added to your cart.`;
 function viewCart() {
   // write your code here
   
+  var myString = "In your cart, you have "
+
+    for(var i = 0; i < cart.length; i++){
+      for(var list in cart[i]){
+        myString+=`${list} at $${cart[i][list]}`
+          if(i!==cart.length-1){
+            myString+=", "
+          } else{
+              myString+="."
+          }
+      }
+
+    }
+
   if(cart.length === 0){
     return ("Your shopping cart is empty.")
   }
