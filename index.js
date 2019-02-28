@@ -33,6 +33,8 @@ function viewCart() {
       str += arr + ".";
     } else if (arr.length === 2) {
       str += (arr[0] + " and" + arr[1] + ".");
+    } else if (arr.length > 2) {
+      var 
     }
   console.log(str);
 }
