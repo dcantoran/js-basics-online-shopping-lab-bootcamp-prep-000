@@ -34,9 +34,7 @@ function viewCart() {
           }
        }
     return myString;
-    } else{
-    return ("Your shopping cart is empty.")
-  }
+    }
 }
 
 function total() {
