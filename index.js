@@ -21,25 +21,27 @@ return `${item} has been added to your cart.`;
 
 function viewCart() {
   // write your code here
-    if(cart.length === 0) {
-      console.log("Your shopping cart is empty.");
-    }
-    var arr = [];
-    for(var i = 0; i < cart.length; i ++) {
-      var keys = Object.keys(cart[i])[0];
-      arr.push(keys + " at $" + cart[i][keys]);
-    }
-    var str = "In your cart, you have ";
-    if(arr.length === 1) {
-      str += arr + ".";
-    } else if (arr.length === 2) {
-      str += (arr[0] + " and" + arr[1] + ".");
-    } else if (arr.length > 2) {
-      var last = arr.pop();
-      var comma = arr.join(', ');
-      str += (comma + ", and " + last + ".");
-    }
-  console.log(str);
+    if(cart.length === 0){
+  console.log(`Your shopping cart is empty.`)
+}
+else{
+      var myString = "In your cart, you have "
+
+         for(var i = 0, l = cart.length; i < l; i++){
+            for(var list in cart[i]){
+            myString+=`${list} at $${cart[i][list]}`
+                if(i!==cart.length-1){
+                  myString+=", "
+                }
+                else{
+                  myString+="."
+                }
+              }
+
+             }
+
+       console.log(myString)
+}   
 }
 
 function total() {
