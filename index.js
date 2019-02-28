@@ -27,7 +27,7 @@ function viewCart() {
     }
     for(var i = 0; i < cart.length; i ++) {
       if(cart.length === 1) {
-        console.log(`In your cart, you have ${} at`)
+        console.log(`In your cart, you have ${cart[0]} at`)
       }
     }
   
