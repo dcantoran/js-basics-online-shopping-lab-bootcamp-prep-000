@@ -27,7 +27,7 @@ function viewCart() {
     }
     var arr = [];
     for(var i = 0; i < cart.length; i ++) {
-      arr.push(Object.key(cart[i])[0] + " at $")
+      arr.push(Object.key(cart[i])[0] + " at $" + cart[i][Object.key(cart[i])[0]]);
     }
   
   
