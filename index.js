@@ -27,9 +27,7 @@ function viewCart() {
     }
     var arr = [];
     for(var i = 0; i < cart.length; i ++) {
-      if(cart.length === 1) {
-        console.log(`In your cart, you have ${cart[0]} at`)
-      }
+      arr.push(Object.key(cart[i]))
     }
   
   
