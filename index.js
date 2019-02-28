@@ -31,7 +31,7 @@ function viewCart() {
     }
     var str = "In your cart, you have";
     if(arr.length === 1) {
-      str += arr
+      str += arr + ".";
     }
   
 }
