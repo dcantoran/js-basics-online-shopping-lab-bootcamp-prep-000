@@ -26,7 +26,8 @@ function viewCart() {
     }
     var arr = [];
     for(var i = 0; i < cart.length; i ++) {
-      arr.push(Object.keys(cart[i])[0] + " at $" + cart[i][Object.keys(cart[i])[0]]);
+      var keys = Object.keys(cart[i])[0];
+      arr.push(keys + " at $" + cart[i][keys]);
     }
     var str = "In your cart, you have";
     if(arr.length === 1) {
